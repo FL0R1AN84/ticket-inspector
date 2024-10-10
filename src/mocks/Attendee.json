@@ -1,0 +1,232 @@
+{
+  "tickets": [
+    {
+      "id": 1,
+      "post_id": 1,
+      "attendees": [
+        {
+          "id": 1,
+          "post_id": 1,
+          "checked_in": true,
+          "name": "Z Name",
+          "email": "zname@example.com",
+          "ticket_id": "0001",
+          "price": "45,67",
+          "currency": "&euro;"
+        },
+        {
+          "id": 2,
+          "post_id": 1,
+          "checked_in": false,
+          "name": "A Name",
+          "email": "aname@example.com",
+          "ticket_id": "0002",
+          "price": "67,89",
+          "currency": "&euro;"
+        },
+        {
+          "id": 3,
+          "post_id": 1,
+          "checked_in": false,
+          "name": "B Name",
+          "email": "bname@example.com",
+          "ticket_id": "0003",
+          "price": "23,45",
+          "currency": "&euro;"
+        },
+        {
+          "id": 4,
+          "post_id": 1,
+          "checked_in": false,
+          "name": "Y Name",
+          "email": "yname@example.com",
+          "ticket_id": "0004",
+          "price": "88,12",
+          "currency": "&euro;"
+        },
+        {
+          "id": 5,
+          "post_id": 1,
+          "checked_in": true,
+          "name": "C Name",
+          "email": "cname@example.com",
+          "ticket_id": "0005",
+          "price": "34,56",
+          "currency": "&euro;"
+        },
+        {
+          "id": 6,
+          "post_id": 1,
+          "checked_in": true,
+          "name": "X Name",
+          "email": "xname@example.com",
+          "ticket_id": "0006",
+          "price": "56,78",
+          "currency": "&euro;"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "post_id": 2,
+      "attendees": [
+        {
+          "id": 7,
+          "post_id": 2,
+          "checked_in": false,
+          "name": "A Name",
+          "email": "aname@example.com",
+          "ticket_id": "0007",
+          "price": "77,34",
+          "currency": "&euro;"
+        },
+        {
+          "id": 8,
+          "post_id": 2,
+          "checked_in": false,
+          "name": "B Name",
+          "email": "bname@example.com",
+          "ticket_id": "0008",
+          "price": "19,99",
+          "currency": "&euro;"
+        },
+        {
+          "id": 9,
+          "post_id": 2,
+          "checked_in": false,
+          "name": "Y Name",
+          "email": "yname@example.com",
+          "ticket_id": "0009",
+          "price": "99,45",
+          "currency": "&euro;"
+        },
+        {
+          "id": 10,
+          "post_id": 2,
+          "checked_in": true,
+          "name": "X Name",
+          "email": "xname@example.com",
+          "ticket_id": "0010",
+          "price": "42,67",
+          "currency": "&euro;"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "post_id": 4,
+      "attendees": [
+        {
+          "id": 11,
+          "post_id": 4,
+          "checked_in": true,
+          "name": "Bärbelche",
+          "email": "baerbelche@example.com",
+          "ticket_id": "0011",
+          "price": "65,23",
+          "currency": "&euro;"
+        },
+        {
+          "id": 12,
+          "post_id": 4,
+          "checked_in": false,
+          "name": "Lissbätt",
+          "email": "lissbaett@example.com",
+          "ticket_id": "0012",
+          "price": "29,78",
+          "currency": "&euro;"
+        },
+        {
+          "id": 13,
+          "post_id": 4,
+          "checked_in": false,
+          "name": "Bäätes",
+          "email": "baetes@example.com",
+          "ticket_id": "0013",
+          "price": "54,12",
+          "currency": "&euro;"
+        },
+        {
+          "id": 14,
+          "post_id": 4,
+          "checked_in": false,
+          "name": "Köbes",
+          "email": "koebes@example.com",
+          "ticket_id": "0014",
+          "price": "78,56",
+          "currency": "&euro;"
+        },
+        {
+          "id": 15,
+          "post_id": 4,
+          "checked_in": true,
+          "name": "Jupp",
+          "email": "jupp@example.com",
+          "ticket_id": "0015",
+          "price": "31,45",
+          "currency": "&euro;"
+        },
+        {
+          "id": 16,
+          "post_id": 4,
+          "checked_in": true,
+          "name": "Marieche",
+          "email": "marieche@example.com",
+          "ticket_id": "0016",
+          "price": "89,99",
+          "currency": "&euro;"
+        },
+        {
+          "id": 17,
+          "post_id": 4,
+          "checked_in": true,
+          "name": "Pitter",
+          "email": "pitter@example.com",
+          "ticket_id": "0017",
+          "price": "22,34",
+          "currency": "&euro;"
+        },
+        {
+          "id": 18,
+          "post_id": 4,
+          "checked_in": true,
+          "name": "Öschel",
+          "email": "oeschel@example.com",
+          "ticket_id": "0018",
+          "price": "37,89",
+          "currency": "&euro;"
+        },
+        {
+          "id": 19,
+          "post_id": 4,
+          "checked_in": true,
+          "name": "Schäng",
+          "email": "schaeng@example.com",
+          "ticket_id": "0019",
+          "price": "53,45",
+          "currency": "&euro;"
+        },
+        {
+          "id": 20,
+          "post_id": 4,
+          "checked_in": true,
+          "name": "Nelles",
+          "email": "nelles@example.com",
+          "ticket_id": "0020",
+          "price": "74,56",
+          "currency": "&euro;"
+        },
+        {
+          "id": 21,
+          "post_id": 4,
+          "checked_in": true,
+          "name": "Hennes",
+          "email": "hennes@example.com",
+          "ticket_id": "0021",
+          "price": "48,23",
+          "currency": "&euro;"
+        }
+      ]
+    }
+  ]
+}

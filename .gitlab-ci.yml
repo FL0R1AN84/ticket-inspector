@@ -1,0 +1,25 @@
+stages:
+  - renovate
+  - test
+
+renovate:
+  image: renovate/renovate:latest
+  stage: renovate
+  variables:
+    RENOVATE_PLATFORM: gitlab
+    RENOVATE_ENDPOINT: $CI_API_V4_URL
+    RENOVATE_AUTODISCOVER: "true"
+    RENOVATE_BINARY_SOURCE: install
+    LOG_LEVEL: debug
+  tags:
+    - gitlab-org
+  only:
+    - schedules
+  script:
+    - renovate $RENOVATE_EXTRA_FLAGS
+
+sast:
+  stage: test
+include:
+  - template: Security/SAST.gitlab-ci.yml
+

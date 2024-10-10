@@ -1,0 +1,7 @@
+{
+  "name": "ticketkings",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}

@@ -1,0 +1,77 @@
+body {
+    overflow: hidden;
+}
+
+ion-content::part(scroll)::-webkit-scrollbar {
+    display: none;
+}
+
+ion-content::part(scroll) {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+ion-modal::part(content) {
+    --background: rgba(var(--ion-background-color-rgb, 255, 255, 255), 0);
+    backdrop-filter: saturate(180%) blur(20px);
+    position: relative;
+    width: 378px;
+}
+
+ion-modal::part(handle) {
+    display: none;
+}
+
+.modal-wrapper {
+    background: yellow;
+}
+
+.modal {
+    position: relative;
+    width: 378px;
+}
+
+.modal .content {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.modal .full {
+    height: 680px;
+}
+
+.modal .small {
+    height: 278px;
+}
+
+.smartphone {
+    position: relative;
+    width: 410px;
+    height: 820px;
+    margin: auto;
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 32px;
+    background: white;
+}
+
+.smartphone::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    width: 60px;
+    height: 5px;
+    background: #333;
+    border-radius: 10px;
+    transform: translateX(-50%);
+}
+
+.smartphone .content {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
