@@ -41,7 +41,9 @@ const title = ref('')
 
 onMounted(async () => {
   try {
-    const response = await axios.get<ApiResponse>('src/mocks/Events.json')
+    const response = await axios.get<ApiResponse>(
+      './../../public/mocks/Events.json'
+    )
     setTimeout(() => {
       const event = response.data.events.find(
         (event) => event.id === eventId.value
