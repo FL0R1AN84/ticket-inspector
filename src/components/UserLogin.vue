@@ -28,7 +28,6 @@
                   label="Username"
                   label-placement="floating"
                   name="username"
-                  placeholder="demo"
                   required
                   type="text"
                 ></ion-input>
@@ -40,7 +39,6 @@
                   label="Password"
                   label-placement="floating"
                   name="password"
-                  placeholder="demo"
                   required
                   type="password"
                 >
@@ -88,7 +86,6 @@ import {
   IonText,
   toastController
 } from '@ionic/vue'
-import axios from 'axios'
 import { computed, ref } from 'vue'
 import { useDark } from '@vueuse/core'
 import HeaderModal from '@/components/elements/HeaderModal.vue'
@@ -117,27 +114,12 @@ const canSubmit = computed(
 const onLogin = async () => {
   loading.value = true
   try {
-    await axios
-      .post(
-        '/mocks/Login.json',
-        {},
-        {
-          headers: {
-            Authorization: `Basic ${btoa(`${username.value}:${password.value}`)}`
-          }
-        }
-      )
-      .then((response) => {
-        const authHeader = response.config.headers.Authorization
-        if (authHeader) {
-          localStorage.setItem('auth', String(authHeader))
-          router.go(0)
-        }
-      })
+    const mockAuthToken = `Basic ${btoa(`${username.value}:${password.value}`)}`
+    localStorage.setItem('auth', mockAuthToken)
+    router.go(0)
   } catch (error: any) {
     networkError.value = true
-    networkErrorMsg.value =
-      error.response.data.msg || error.response.data.message || error.message
+    networkErrorMsg.value = error.message
     console.error(error)
     await presentErrorToast(networkErrorMsg.value)
   } finally {
