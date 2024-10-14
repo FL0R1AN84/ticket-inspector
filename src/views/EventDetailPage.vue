@@ -35,14 +35,13 @@
 import AttendeeList from '@/components/AttendeeList.vue'
 import HeaderNavigation from '@/components/elements/HeaderNavigation.vue'
 import EventDetail from '@/components/EventDetail.vue'
+import router from '@/router'
 import {
-  IonButton,
   IonContent,
   IonHeader,
   IonPage,
   IonRefresher,
   IonRefresherContent,
-  IonText,
   IonTitle,
   IonToolbar
 } from '@ionic/vue'
@@ -53,7 +52,7 @@ const auth = localStorage.getItem('auth')
 
 const handleRefresh = () => {
   setTimeout(() => {
-    window.location.reload()
+    router.go(0)
   }, 500)
 }
 </script>

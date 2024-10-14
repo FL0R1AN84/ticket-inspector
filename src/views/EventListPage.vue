@@ -25,6 +25,7 @@
 <script lang="ts" setup>
 import EventList from '@/components/EventList.vue'
 import HeaderDefault from '@/components/elements/HeaderDefault.vue'
+import router from '@/router'
 import {
   IonContent,
   IonHeader,
@@ -37,7 +38,7 @@ import {
 
 const handleRefresh = () => {
   setTimeout(() => {
-    window.location.reload()
+    router.go(0)
   }, 500)
 }
 </script>
