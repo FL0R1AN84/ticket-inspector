@@ -2,25 +2,25 @@
   "events": [
     {
       "id": 1,
-      "image": "src/mocks/assets/event1.jpg",
+      "image": "./../../public/mocks/assets/event1.jpg",
       "start_date": "2024-09-01 23:00:00",
       "title": "First Event"
     },
     {
       "id": 2,
-      "image": "src/mocks/assets/event2.jpg",
+      "image": "./../../public/mocks/assets/event2.jpg",
       "start_date": "2024-10-01 23:00:00",
       "title": "Second Event"
     },
     {
       "id": 3,
-      "image": "src/mocks/assets/event3.jpg",
+      "image": "./../../public/mocks/assets/event3.jpg",
       "start_date": "2024-11-01 23:00:00",
       "title": "Third Event"
     },
     {
       "id": 4,
-      "image": "src/mocks/assets/event4.jpg",
+      "image": "./../../public/mocks/assets/event4.jpg",
       "start_date": "2024-11-11 11:11:11",
       "title": "Fourth Event"
     }
