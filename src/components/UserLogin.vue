@@ -28,6 +28,7 @@
                   label="Username"
                   label-placement="floating"
                   name="username"
+                  placeholder="demo"
                   required
                   type="text"
                 ></ion-input>
@@ -39,6 +40,7 @@
                   label="Password"
                   label-placement="floating"
                   name="password"
+                  placeholder="demo"
                   required
                   type="password"
                 >
