@@ -45,6 +45,7 @@ import { IonIcon, IonModal, IonSpinner, toastController } from '@ionic/vue'
 import HeaderModal from '@/components/elements/HeaderModal.vue'
 import axios from 'axios'
 import { alertOutline, checkmarkCircleOutline } from 'ionicons/icons'
+import router from '@/router'
 
 defineProps<{
   breakpoints: Array<number>
@@ -65,7 +66,7 @@ const showScanConfirmation = ref(false)
 const loading = ref(false)
 
 const dismiss = () => {
-  window.location.reload()
+  router.go(0)
 }
 
 const onCameraOn = () => {

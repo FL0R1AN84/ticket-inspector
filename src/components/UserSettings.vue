@@ -76,6 +76,7 @@ import { checkmarkCircleOutline, closeOutline } from 'ionicons/icons'
 import HeaderModal from './elements/HeaderModal.vue'
 import packageJson from '../../package.json'
 import { ref, watch } from 'vue'
+import router from '@/router'
 
 defineProps<{
   title: string
@@ -101,7 +102,7 @@ watch(apiKey, (newValue) => {
 
 const resetSettings = () => {
   localStorage.clear()
-  window.location.reload()
+  router.go(0)
 }
 
 const clearApiKey = () => {

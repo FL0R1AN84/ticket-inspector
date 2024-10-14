@@ -38,6 +38,7 @@
 <script lang="ts" setup>
 import AttendeeDetail from '@/components/AttendeeDetail.vue'
 import HeaderNavigation from '@/components/elements/HeaderNavigation.vue'
+import router from '@/router'
 import {
   IonButton,
   IonContent,
@@ -58,7 +59,7 @@ const isDark = useDark()
 
 const handleRefresh = () => {
   setTimeout(() => {
-    window.location.reload()
+    router.go(0)
   }, 500)
 }
 </script>
