@@ -92,14 +92,11 @@ onMounted(async () => {
     const auth = localStorage.getItem('auth')
     const eventId = localStorage.getItem('eventId')
 
-    const response = await axios.get<ApiResponse>(
-      './../../public/mocks/Attendee.json',
-      {
-        headers: {
-          Authorization: auth ? `${auth}` : undefined
-        }
+    const response = await axios.get<ApiResponse>('/mocks/Attendee.json', {
+      headers: {
+        Authorization: auth ? `${auth}` : undefined
       }
-    )
+    })
 
     setTimeout(() => {
       const filteredAttendees = response.data.tickets
@@ -130,7 +127,7 @@ const checkIn = async () => {
   try {
     const auth = localStorage.getItem('auth')
     await axios.put(
-      './../../public/mocks/Attendee.json',
+      '/mocks/Attendee.json',
       {
         check_in: true
       },
@@ -152,7 +149,7 @@ const checkOut = async () => {
   try {
     const auth = localStorage.getItem('auth')
     await axios.put(
-      './../../public/mocks/Attendee.json',
+      '/mocks/Attendee.json',
       {
         check_in: false
       },
