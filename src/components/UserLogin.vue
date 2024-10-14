@@ -117,7 +117,7 @@ const onLogin = async () => {
   try {
     await axios
       .post(
-        'src/mocks/Login.json',
+        '/mocks/Login.json',
         {},
         {
           headers: {
