@@ -1,3 +1,5 @@
+![TicketInspector Logo](assets/TicketInspector_icon.png)
+
 # TicketInspector
 
 ## Show events, lists all attendees and scan tickets
