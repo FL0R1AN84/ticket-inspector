@@ -109,14 +109,11 @@ onMounted(async () => {
   try {
     const auth = localStorage.getItem('auth')
 
-    const response = await axios.get<ApiResponse>(
-      './../../public/mocks/Attendee.json',
-      {
-        headers: {
-          Authorization: auth ? `${auth}` : undefined
-        }
+    const response = await axios.get<ApiResponse>('/mocks/Attendee.json', {
+      headers: {
+        Authorization: auth ? `${auth}` : undefined
       }
-    )
+    })
     setTimeout(() => {
       tickets.value = response.data.tickets
       const eventId = localStorage.getItem('eventId')

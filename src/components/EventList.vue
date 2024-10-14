@@ -54,9 +54,7 @@ const addOneMonthOrYearIfPast = (date: string, id: number) => {
 
 onMounted(async () => {
   try {
-    const response = await axios.get<ApiResponse>(
-      './../../public/mocks/Events.json'
-    )
+    const response = await axios.get<ApiResponse>('/mocks/Events.json')
     setTimeout(() => {
       events.value = response.data.events.map((event: any) => ({
         ...event,
