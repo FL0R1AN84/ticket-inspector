@@ -30,7 +30,7 @@
     "date-fns": "3.6.0",
     "html5-device-mockups": "3.2.1",
     "ionicons": "7.4.0",
-    "vue": "3.4.36",
+    "vue": "3.5.12",
     "vue-qrcode-reader": "5.5.6",
     "vue-router": "4.3.2"
   },
