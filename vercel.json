@@ -2,7 +2,11 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/"
+      "destination": "/eventlist"
+    },
+    {
+      "source": "/eventlist",
+      "destination": "/eventlist"
     }
   ]
 }
