@@ -27,7 +27,7 @@
     "@ionic/vue-router": "8.1.0",
     "@vueuse/core": "10.11.0",
     "axios": "1.7.4",
-    "date-fns": "3.6.0",
+    "date-fns": "4.1.0",
     "html5-device-mockups": "3.2.1",
     "ionicons": "7.4.0",
     "vue": "3.4.36",
