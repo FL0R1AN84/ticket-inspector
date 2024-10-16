@@ -7,6 +7,14 @@
     {
       "source": "/eventlist",
       "destination": "/eventlist"
+    },
+    {
+      "source": "/eventdetail/:id",
+      "destination": "/eventdetail/:id"
+    },
+    {
+      "source": "/attendeedetail/:id",
+      "destination": "/attendeedetail/:id"
     }
   ]
 }
