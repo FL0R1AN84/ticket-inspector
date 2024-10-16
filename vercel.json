@@ -1,20 +1,16 @@
 {
   "rewrites": [
     {
-      "source": "/",
+      "source": "/eventlist",
       "destination": "/eventlist"
     },
     {
-      "source": "/eventlist",
-      "destination": "/"
+      "source": "/eventdetail/:id*",
+      "destination": "/eventdetail/:id*"
     },
     {
-      "source": "/eventdetail/:id",
-      "destination": "/eventdetail/:id"
-    },
-    {
-      "source": "/attendeedetail/:id",
-      "destination": "/attendeedetail/:id"
+      "source": "/attendeedetail/:id*",
+      "destination": "/attendeedetail/:id*"
     }
   ]
 }
