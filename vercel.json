@@ -6,11 +6,11 @@
     },
     {
       "source": "/eventdetail/:*",
-      "destination": "/eventdetail/:*"
+      "destination": "/eventdetail/*"
     },
     {
       "source": "/attendeedetail/:*",
-      "destination": "/attendeedetail/:*"
+      "destination": "/attendeedetail/*"
     }
   ]
 }
