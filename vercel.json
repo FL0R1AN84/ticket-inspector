@@ -5,6 +5,10 @@
       "destination": "/eventlist"
     },
     {
+      "source": "/eventlist",
+      "destination": "/"
+    },
+    {
       "source": "/eventdetail/:id",
       "destination": "/eventdetail/:id"
     },
