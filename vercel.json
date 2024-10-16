@@ -5,12 +5,12 @@
       "destination": "/eventlist"
     },
     {
-      "source": "/eventdetail/*",
-      "destination": "/eventdetail/*"
+      "source": "/eventdetail/:id*",
+      "destination": "/eventdetail/:id*"
     },
     {
-      "source": "/attendeedetail/*",
-      "destination": "/attendeedetail/*"
+      "source": "/attendeedetail/:id*",
+      "destination": "/attendeedetail/:id*"
     }
   ]
 }
