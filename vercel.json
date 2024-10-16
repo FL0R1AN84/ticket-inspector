@@ -6,7 +6,7 @@
     },
     {
       "source": "/eventlist",
-      "destination": "/"
+      "destination": "/eventlist"
     },
     {
       "source": "/eventdetail/:id",
