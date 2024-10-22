@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Exit immediately if a command exits with a non-zero status
+set -e
+
+# Build the app and check if the build is successful
+npm run build
+
 # Read version from package.json
 VERSION=$(grep -o '"version": "[^"]*' package.json | grep -o '[^"]*$')
 

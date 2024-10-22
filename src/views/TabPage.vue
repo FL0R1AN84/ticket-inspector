@@ -3,10 +3,18 @@
     <div class="smartphone">
       <div class="content">
         <EventScanner
-          :breakpoints="[0, 1]"
-          :initial-breakpoint="1"
+          v-if="route.path !== '/eventlist'"
+          :breakpoints="[0, 0.98]"
+          :initial-breakpoint="0.98"
           title="Event Scanner"
           trigger="open-scanner"
+        />
+        <UserLogin
+          v-if="route.path === '/eventlist'"
+          :breakpoints="[0, 0.98]"
+          :initial-breakpoint="0.98"
+          title="Login"
+          trigger="open-login"
         />
         <UserSettings
           :breakpoints="[0, 0.24]"
@@ -16,7 +24,7 @@
         />
         <ion-tabs>
           <ion-router-outlet />
-          <ion-tab-bar v-if="auth" slot="bottom" translucent>
+          <ion-tab-bar slot="bottom" translucent>
             <ion-tab-button id="open-settings" tab="settings">
               <ion-icon
                 :ios="cogOutline"
@@ -25,8 +33,29 @@
               />
             </ion-tab-button>
 
-            <ion-tab-button id="open-scanner" tab="scanner">
-              <ion-fab v-if="route.path !== '/eventlist'">
+            <ion-tab-button
+              v-if="route.path === '/eventlist'"
+              id="open-login"
+              tab="login"
+            >
+              <ion-fab>
+                <ion-fab-button color="primary">
+                  <ion-icon
+                    :icon="auth ? person : personOutline"
+                    aria-hidden="true"
+                    color="secondary"
+                  />
+                </ion-fab-button>
+              </ion-fab>
+            </ion-tab-button>
+
+            <ion-tab-button
+              v-if="route.path !== '/eventlist'"
+              id="open-scanner"
+              :disabled="!auth"
+              tab="scanner"
+            >
+              <ion-fab>
                 <ion-fab-button color="primary">
                   <ion-icon
                     :icon="camera"
@@ -54,10 +83,17 @@ import {
   IonTabButton,
   IonTabs
 } from '@ionic/vue'
-import { camera, cogOutline, settingsOutline } from 'ionicons/icons'
+import {
+  camera,
+  cogOutline,
+  person,
+  personOutline,
+  settingsOutline
+} from 'ionicons/icons'
+import { useRoute } from 'vue-router'
 import EventScanner from '@/components/EventScanner.vue'
 import UserSettings from '@/components/UserSettings.vue'
-import { useRoute } from 'vue-router'
+import UserLogin from '@/components/UserLogin.vue'
 
 const auth = localStorage.getItem('auth')
 const route = useRoute()
