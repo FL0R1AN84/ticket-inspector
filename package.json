@@ -1,7 +1,7 @@
 {
   "name": "ticket-inspector",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -23,8 +23,8 @@
     "@capacitor/ios": "6.1.2",
     "@capacitor/keyboard": "6.0.2",
     "@capacitor/status-bar": "6.0.1",
-    "@ionic/vue": "8.3.2",
-    "@ionic/vue-router": "8.3.2",
+    "@ionic/vue": "8.3.3",
+    "@ionic/vue-router": "8.3.3",
     "@vueuse/core": "11.1.0",
     "axios": "1.7.7",
     "date-fns": "4.1.0",
@@ -44,7 +44,7 @@
     "eslint": "8.57.1",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-prettier": "5.2.1",
-    "eslint-plugin-vue": "9.29.0",
+    "eslint-plugin-vue": "9.29.1",
     "jsdom": "25.0.1",
     "prettier": "3.3.3",
     "terser": "5.36.0",

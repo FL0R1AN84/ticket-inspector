@@ -18,7 +18,7 @@
             <ion-label color="primary">Inspector</ion-label>
           </div>
 
-          <form novalidate @submit.prevent="onLogin">
+          <form v-if="!auth" novalidate @submit.prevent="onLogin">
             <ion-list :inset="true">
               <ion-item>
                 <ion-input
@@ -63,6 +63,15 @@
               </ion-col>
             </ion-row>
           </form>
+
+          <ion-button
+            v-if="auth"
+            class="ion-padding"
+            expand="block"
+            @click="onLogout"
+          >
+            <ion-text :color="isDark ? 'light' : 'dark'">Logout</ion-text>
+          </ion-button>
         </ion-content>
       </div>
     </div>
@@ -90,12 +99,13 @@ import { computed, ref } from 'vue'
 import { useDark } from '@vueuse/core'
 import HeaderModal from '@/components/elements/HeaderModal.vue'
 
+const auth = localStorage.getItem('auth')
+const loading = ref(false)
 const isDark = useDark()
 const networkError = ref(false)
 const networkErrorMsg = ref('')
 const password = ref('')
 const username = ref('')
-const loading = ref(false)
 
 defineProps<{
   breakpoints: Array<number>
@@ -125,6 +135,11 @@ const onLogin = async () => {
   } finally {
     loading.value = false
   }
+}
+
+const onLogout = () => {
+  localStorage.removeItem('auth')
+  router.go(0)
 }
 
 const errorCounter = ref(0)
