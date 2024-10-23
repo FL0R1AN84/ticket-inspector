@@ -92,7 +92,7 @@ const onDetect = async (detectedCodes: any[]) => {
   try {
     const auth = localStorage.getItem('auth')
     await axios.get(
-      `https://ticketkings.de/wp-json/tribe/tickets/v1/qr/?ticket_id=${ticketId}&event_id=${eventId}&api_key=${apiKey}&security_code=${securityCode}`,
+      `https://ticket-inspector.vercel.app/?ticket_id=${ticketId}&event_id=${eventId}&api_key=${apiKey}&security_code=${securityCode}`,
       {
         headers: {
           Authorization: auth ? `${auth}` : undefined

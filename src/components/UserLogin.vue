@@ -11,7 +11,7 @@
         <HeaderModal title="Login" />
         <ion-content class="ion-padding">
           <div class="ion-text-center ion-padding app-logo">
-            <img alt="TicketKings Logo" src="/TicketInspector_icon.png" />
+            <img alt="Ticket-Inspector Logo" src="/TicketInspector_icon.png" />
           </div>
           <div class="ion-text-center">
             <ion-label>Ticket</ion-label>
