@@ -1,10 +1,6 @@
 {
   "rewrites": [
     {
-      "source": "/",
-      "destination": "/eventlist"
-    },
-    {
       "source": "/eventlist",
       "destination": "/eventlist"
     },
