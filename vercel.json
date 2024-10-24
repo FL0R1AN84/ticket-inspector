@@ -7,6 +7,10 @@
     {
       "source": "/eventdetail/:path*",
       "destination": "/"
+    },
+    {
+      "source": "/attendeedetail/:path*",
+      "destination": "/"
     }
   ]
 }
