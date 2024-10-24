@@ -5,20 +5,8 @@
       "destination": "/"
     },
     {
-      "source": "/eventdetail/1",
-      "destination": "/eventdetail/1"
-    },
-    {
-      "source": "/eventdetail/2",
-      "destination": "/eventdetail/2"
-    },
-    {
-      "source": "/eventdetail/3",
-      "destination": "/eventdetail/3"
-    },
-    {
-      "source": "/eventdetail/4",
-      "destination": "/eventdetail/4"
+      "source": "/eventdetail/:path*",
+      "destination": "/eventdetail/:path*"
     }
   ]
 }
