@@ -1,6 +1,6 @@
 <template>
   <ion-page mode="ios">
-    <div class="smartphone">
+    <div :class="containerClass">
       <div class="content">
         <EventScanner
           v-if="route.path !== '/eventlist'"
@@ -90,6 +90,7 @@ import {
   personOutline,
   settingsOutline
 } from 'ionicons/icons'
+import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import EventScanner from '@/components/EventScanner.vue'
 import UserSettings from '@/components/UserSettings.vue'
@@ -97,6 +98,14 @@ import UserLogin from '@/components/UserLogin.vue'
 
 const auth = localStorage.getItem('auth')
 const route = useRoute()
+
+const isMobileDevice = () => {
+  return /Mobi|Android/i.test(navigator.userAgent)
+}
+
+const containerClass = computed(() => {
+  return isMobileDevice() ? '' : 'smartphone'
+})
 </script>
 
 <style scoped>
