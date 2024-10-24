@@ -6,7 +6,7 @@
     },
     {
       "source": "/eventdetail/:path*",
-      "destination": "/eventdetail/:path*"
+      "destination": "/"
     }
   ]
 }
