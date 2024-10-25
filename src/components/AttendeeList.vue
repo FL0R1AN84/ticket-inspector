@@ -74,10 +74,7 @@
       </ion-button>
     </div>
 
-    <ion-card
-      v-if="attendees.length === 0 && authorId === userId"
-      class="ion-padding"
-    >
+    <ion-card v-if="attendees.length === 0" class="ion-padding">
       <ion-card-title>No attendees found</ion-card-title>
     </ion-card>
 
