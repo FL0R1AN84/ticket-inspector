@@ -1,7 +1,7 @@
 {
   "name": "ticket-inspector",
   "private": true,
-  "version": "1.1.0",
+  "version": "1.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -36,11 +36,11 @@
   },
   "devDependencies": {
     "@capacitor/cli": "6.1.2",
-    "@vitejs/plugin-legacy": "5.4.2",
+    "@vitejs/plugin-legacy": "5.4.3",
     "@vitejs/plugin-vue": "5.1.4",
     "@vue/eslint-config-typescript": "13.0.0",
     "@vue/test-utils": "2.4.6",
-    "cypress": "13.15.0",
+    "cypress": "13.15.1",
     "eslint": "8.57.1",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-prettier": "5.2.1",

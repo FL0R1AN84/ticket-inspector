@@ -8,23 +8,49 @@
     >
     </ion-searchbar>
 
-    <ion-card v-if="attendees.length === 0" class="ion-padding">
-      <ion-card-title>No attendees found</ion-card-title>
-    </ion-card>
-
     <div v-if="attendees.length > 0 && statChart">
       <ion-item>
-        <ion-label @click="resetAttendees">Total attendees:</ion-label>
+        <ion-label
+          :class="{ 'active-label': activeLabel === 'total' }"
+          @click="
+            () => {
+              setActiveLabel('total')
+              resetAttendees()
+            }
+          "
+        >
+          Total attendees:
+        </ion-label>
         <ion-badge color="dark"
           >{{ checkedInCount + checkedOutCount }}
         </ion-badge>
       </ion-item>
       <ion-item>
-        <ion-label @click="checkedInFilter">Checked in:</ion-label>
+        <ion-label
+          :class="{ 'active-label': activeLabel === 'checkedIn' }"
+          @click="
+            () => {
+              setActiveLabel('checkedIn')
+              checkedInFilter()
+            }
+          "
+        >
+          CheckedIn:
+        </ion-label>
         <ion-badge color="success">{{ checkedInCount }}</ion-badge>
       </ion-item>
       <ion-item>
-        <ion-label @click="checkedOutFilter">Checked out:</ion-label>
+        <ion-label
+          :class="{ 'active-label': activeLabel === 'checkedOut' }"
+          @click="
+            () => {
+              setActiveLabel('checkedOut')
+              checkedOutFilter()
+            }
+          "
+        >
+          Not CheckedIn:
+        </ion-label>
         <ion-badge color="danger">{{ checkedOutCount }}</ion-badge>
       </ion-item>
     </div>
@@ -47,6 +73,10 @@
         ></ion-icon>
       </ion-button>
     </div>
+
+    <ion-card v-if="attendees.length === 0" class="ion-padding">
+      <ion-card-title>No attendees found</ion-card-title>
+    </ion-card>
 
     <div v-for="attendee in results" :key="attendee.id">
       <router-link
@@ -97,6 +127,7 @@ interface ApiResponse {
   post_id: any
 }
 
+const activeLabel = ref('total')
 const attendees = ref()
 const checkedInCount = ref(0)
 const checkedOutCount = ref(0)
@@ -104,6 +135,10 @@ const loading = ref(true)
 const postId = ref<any[]>([localStorage.getItem('eventId')])
 const statChart = ref(false)
 const tickets = ref()
+
+const setActiveLabel = (label: string) => {
+  activeLabel.value = label
+}
 
 onMounted(async () => {
   try {
@@ -180,6 +215,14 @@ const checkedOutFilter = () => {
 <style scoped>
 a {
   text-decoration: none;
+}
+
+.active-label {
+  font-weight: bold;
+  color: var(--ion-color-primary);
+  transition:
+    color 0.3s ease,
+    font-weight 0.3s ease;
 }
 
 .button-container {
