@@ -24,7 +24,7 @@
     "@capacitor/keyboard": "6.0.2",
     "@capacitor/status-bar": "6.0.1",
     "@ionic/vue": "8.4.0",
-    "@ionic/vue-router": "8.3.4",
+    "@ionic/vue-router": "8.4.0",
     "@vueuse/core": "11.2.0",
     "axios": "1.7.7",
     "date-fns": "4.1.0",
