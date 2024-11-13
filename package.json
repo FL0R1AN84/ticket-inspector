@@ -50,7 +50,7 @@
     "terser": "5.36.0",
     "typescript": "5.6.3",
     "vite": "5.4.11",
-    "vitest": "2.1.4",
+    "vitest": "2.1.5",
     "vue-tsc": "2.1.10"
   },
   "description": "An Ionic project"
