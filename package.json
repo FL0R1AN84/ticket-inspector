@@ -25,7 +25,7 @@
     "@capacitor/status-bar": "6.0.2",
     "@ionic/vue": "8.4.2",
     "@ionic/vue-router": "8.4.2",
-    "@vueuse/core": "12.3.0",
+    "@vueuse/core": "12.5.0",
     "axios": "1.7.9",
     "date-fns": "4.1.0",
     "html5-device-mockups": "3.2.1",
