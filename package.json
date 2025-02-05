@@ -31,7 +31,7 @@
     "html5-device-mockups": "3.2.1",
     "ionicons": "7.4.0",
     "vue": "3.5.13",
-    "vue-qrcode-reader": "5.5.11",
+    "vue-qrcode-reader": "5.7.0",
     "vue-router": "4.5.0"
   },
   "devDependencies": {
