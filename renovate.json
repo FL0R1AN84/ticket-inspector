@@ -1,11 +1,20 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "baseBranches": ["develop"],
-  "extends": ["config:recommended", ":pinAllExceptPeerDependencies"],
+  "baseBranches": [
+    "develop"
+  ],
+  "extends": [
+    "config:recommended",
+    ":pinAllExceptPeerDependencies"
+  ],
   "packageRules": [
     {
       "matchUpdateTypes": [
-        "major"
+        "major",
+        "minor",
+        "patch",
+        "pin",
+        "digest"
       ],
       "automerge": true
     }
