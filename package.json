@@ -23,15 +23,15 @@
     "@capacitor/ios": "6.2.0",
     "@capacitor/keyboard": "6.0.3",
     "@capacitor/status-bar": "6.0.2",
-    "@ionic/vue": "8.4.1",
-    "@ionic/vue-router": "8.4.1",
-    "@vueuse/core": "12.3.0",
+    "@ionic/vue": "8.4.2",
+    "@ionic/vue-router": "8.4.2",
+    "@vueuse/core": "12.8.2",
     "axios": "1.7.9",
     "date-fns": "4.1.0",
     "html5-device-mockups": "3.2.1",
     "ionicons": "7.4.0",
     "vue": "3.5.13",
-    "vue-qrcode-reader": "5.5.11",
+    "vue-qrcode-reader": "5.7.0",
     "vue-router": "4.5.0"
   },
   "devDependencies": {
@@ -48,10 +48,10 @@
     "jsdom": "25.0.1",
     "prettier": "3.4.2",
     "terser": "5.37.0",
-    "typescript": "5.6.3",
+    "typescript": "5.7.3",
     "vite": "6.0.11",
-    "vitest": "2.1.8",
-    "vue-tsc": "2.1.10"
+    "vitest": "2.1.9",
+    "vue-tsc": "2.2.0"
   },
   "description": "An Ionic project"
 }

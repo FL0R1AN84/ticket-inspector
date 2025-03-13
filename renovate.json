@@ -4,7 +4,9 @@
   "extends": ["config:recommended", ":pinAllExceptPeerDependencies"],
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch"],
+      "matchUpdateTypes": [
+        "major"
+      ],
       "automerge": true
     }
   ]
