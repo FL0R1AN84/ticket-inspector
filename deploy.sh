@@ -9,8 +9,14 @@ npm run build
 # Read version from package.json
 VERSION=$(grep -o '"version": "[^"]*' package.json | grep -o '[^"]*$')
 
-# Update CURRENT_PROJECT_VERSION in ios/App/App.xcodeproj/project.pbxproj
-sed -i '' "s/CURRENT_PROJECT_VERSION = [^;]*/CURRENT_PROJECT_VERSION = $VERSION/" ios/App/App.xcodeproj/project.pbxproj
+# Update MARKETING_VERSION in ios/App/App.xcodeproj/project.pbxproj
+sed -i '' "s/MARKETING_VERSION = [^;]*/MARKETING_VERSION = $VERSION/" ios/App/App.xcodeproj/project.pbxproj
+
+# Get the current date in the desired format
+DATE_NOW=$(date +%Y%m%d%H%M%S)
+
+# Update CURRENT_PROJECT_VERSION in ios/App/App.xcodeproj/project.pbxproj with the current date
+sed -i '' "s/CURRENT_PROJECT_VERSION = [^;]*/CURRENT_PROJECT_VERSION = $DATE_NOW/" ios/App/App.xcodeproj/project.pbxproj
 
 # Check if android folder exists
 if [ -d "android" ]; then
