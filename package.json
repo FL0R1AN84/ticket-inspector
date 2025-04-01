@@ -16,16 +16,16 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@capacitor/android": "6.2.0",
+    "@capacitor/android": "6.2.1",
     "@capacitor/app": "6.0.2",
-    "@capacitor/core": "6.2.0",
+    "@capacitor/core": "6.2.1",
     "@capacitor/haptics": "6.0.2",
-    "@capacitor/ios": "6.2.0",
+    "@capacitor/ios": "6.2.1",
     "@capacitor/keyboard": "6.0.3",
     "@capacitor/status-bar": "6.0.2",
-    "@ionic/vue": "8.5.1",
-    "@ionic/vue-router": "8.5.1",
-    "@vueuse/core": "12.8.2",
+    "@ionic/vue": "8.5.2",
+    "@ionic/vue-router": "8.5.2",
+    "@vueuse/core": "13.0.0",
     "axios": "1.8.4",
     "date-fns": "4.1.0",
     "html5-device-mockups": "3.2.1",
@@ -35,7 +35,7 @@
     "vue-router": "4.5.0"
   },
   "devDependencies": {
-    "@capacitor/cli": "6.2.0",
+    "@capacitor/cli": "6.2.1",
     "@vitejs/plugin-legacy": "5.4.3",
     "@vitejs/plugin-vue": "5.2.3",
     "@vue/eslint-config-typescript": "13.0.0",
@@ -49,8 +49,8 @@
     "prettier": "3.5.3",
     "terser": "5.39.0",
     "typescript": "5.8.2",
-    "vite": "5.4.15",
-    "vitest": "3.0.8",
+    "vite": "5.4.16",
+    "vitest": "3.1.1",
     "vue-tsc": "2.2.8"
   },
   "description": "An Ionic project"
