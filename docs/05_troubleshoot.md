@@ -2,9 +2,9 @@
 
 ## Android
 
-### ERR_UNSUPPORTED_API_LEVEL: Unsupported API level: 34
+### ERR_UNSUPPORTED_API_LEVEL: Unsupported API level: XX
 
-Use the Device Manager (Android Studio) to configure a device that has a lower API level.
+Use the Device Manager (Android Studio) to configure a device that has this API level.
 
 ## iOS
 
