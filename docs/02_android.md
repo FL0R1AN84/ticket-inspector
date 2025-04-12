@@ -16,9 +16,7 @@ npm install @capacitor/android
 npx cap add android
 ```
 
-- Java max. Version 20
-  - Currently, you cannot run Gradle on Java 21 because Kotlin lacks support for JDK 21. However, support for running Gradle with Java 21 is expected in future versions.
-  - Java version can be changed in Android Studio -> [read more](04_java.md)
+- Java Version 21
 - Android Studio
 
 ```bash
