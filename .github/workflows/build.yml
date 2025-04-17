@@ -1,8 +1,5 @@
 name: Install and build
 on:
-  push:
-    branches:
-      - develop
   pull_request:
     branches:
       - main
