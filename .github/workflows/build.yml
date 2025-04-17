@@ -9,7 +9,7 @@ on:
       - develop
 
 jobs:
-  vitest:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
