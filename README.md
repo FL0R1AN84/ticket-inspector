@@ -16,6 +16,7 @@
 - [Updates](./docs/06_updates.md)
     - [Capacitor](./docs/06_updates.md#capacitor)
     - [npm-check-updates](./docs/06_updates.md#npm-check-updates)
+    - [Renovate](./docs/06_updates.md#renovate)
     - Or let the [renovate bot](https://github.com/apps/renovate) do it for you 🤖
 
 
