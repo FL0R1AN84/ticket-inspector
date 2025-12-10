@@ -22,7 +22,7 @@
     "@capacitor/haptics": "6.0.3",
     "@capacitor/ios": "6.2.1",
     "@capacitor/keyboard": "6.0.4",
-    "@capacitor/status-bar": "6.0.2",
+    "@capacitor/status-bar": "6.0.3",
     "@ionic/vue": "8.7.7",
     "@ionic/vue-router": "8.7.7",
     "@vueuse/core": "13.9.0",
