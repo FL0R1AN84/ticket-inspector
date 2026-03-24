@@ -29,7 +29,7 @@
     "axios": "1.13.2",
     "date-fns": "4.1.0",
     "html5-device-mockups": "3.2.1",
-    "ionicons": "7.4.0",
+    "ionicons": "8.0.13",
     "vue": "3.5.25",
     "vue-qrcode-reader": "5.7.3",
     "vue-router": "4.6.4"
