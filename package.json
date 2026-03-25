@@ -23,7 +23,7 @@
     "@capacitor/ios": "6.2.1",
     "@capacitor/keyboard": "6.0.4",
     "@capacitor/status-bar": "6.0.3",
-    "@ionic/vue": "8.7.12",
+    "@ionic/vue": "8.8.1",
     "@ionic/vue-router": "8.7.12",
     "@vueuse/core": "13.9.0",
     "axios": "1.13.2",
