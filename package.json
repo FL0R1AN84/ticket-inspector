@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@capacitor/android": "6.2.1",
-    "@capacitor/app": "6.0.3",
+    "@capacitor/app": "8.1.1",
     "@capacitor/core": "6.2.1",
     "@capacitor/haptics": "6.0.3",
     "@capacitor/ios": "6.2.1",
