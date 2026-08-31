@@ -16,11 +16,11 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@capacitor/android": "6.2.1",
+    "@capacitor/android": "8.5.1",
     "@capacitor/app": "6.0.3",
-    "@capacitor/core": "6.2.1",
+    "@capacitor/core": "8.5.1",
     "@capacitor/haptics": "6.0.3",
-    "@capacitor/ios": "6.2.1",
+    "@capacitor/ios": "8.5.1",
     "@capacitor/keyboard": "6.0.4",
     "@capacitor/status-bar": "6.0.3",
     "@ionic/vue": "8.8.13",
@@ -35,7 +35,7 @@
     "vue-router": "5.0.4"
   },
   "devDependencies": {
-    "@capacitor/cli": "6.2.1",
+    "@capacitor/cli": "8.5.1",
     "@vitejs/plugin-legacy": "5.4.3",
     "@vitejs/plugin-vue": "6.0.7",
     "@vue/eslint-config-typescript": "13.0.0",
